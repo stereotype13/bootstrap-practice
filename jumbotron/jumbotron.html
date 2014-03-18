@@ -33,7 +33,7 @@
 	  .jumbotron h3 {color: rgba(254,254,254,0.65); }
 	  
 	  .fade-in {
-		display: none;
+		opacity: 0;
 	  }
 	</style>
 </head>
@@ -43,14 +43,14 @@
 
 <div class="jumbotron">
 	<div class="container">
-		<div class="row fade-in" id="first"> 
-			<div class="col-sm-2 col-sm-offset-1"><p>First Point</p></div>
+		<div class="row " > 
+			<div class="col-sm-2 col-sm-offset-1"><p class="fade-in" id="first">First Point</p></div>
 		</div>
-		<div class="row fade-in" id="second">
-			<div class="col-sm-3 col-sm-offset-8"><p>Second Point</p></div>
+		<div class="row" >
+			<div class="col-sm-3 col-sm-offset-8"><p class="fade-in" id="second">Second Point</p></div>
 		</div>
-		<div class="row fade-in" id="third" style="margin-bottom: 6em">
-			<div class="col-sm-4 col-sm-offset-3"><p>Third Point</p></div>
+		<div class="row" style="margin-bottom: 6em">
+			<div class="col-sm-4 col-sm-offset-3 fade-in" id="third"><p>Third Point</p></div>
 		</div>
 		
 		<div class="row">
@@ -78,9 +78,9 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-	$('#first').fadeIn(1000).removeClass('fade-in');
-	$('#second').fadeIn(1000).delay(1000).removeClass('fade-in');
-	$('#third').fadeIn(1000).removeClass('fade-in');
+	$('#first').fadeTo(1000, 1);
+	$('#second').delay(2000).fadeTo(1000, 1);
+	$('#third').delay(1000).fadeTo(1000, 1);
   });
 </script>
 
