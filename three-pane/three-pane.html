@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Three-pane</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	  html, body {
+		height: 100%;
+		width: 100%;
+	  }
+	  
+	  .intro {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .intro-main {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .intro-side {
+		height: 50%;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .with-border {
+		background-color: #C8C8C8;
+		
+	  }
+	  
+	  .pane-1 {
+		background-image: url('images/pane-1.jpg');
+		background-size: cover;
+	  }
+	  .pane-2 {
+		background-image: url('images/pane-2.jpg');
+		background-size: cover;
+		border-left: 0.5em solid white;
+	  }
+	  
+	  .pane-3 {
+		background-image: url('images/pane-3.jpg');
+		background-size: cover;
+		border-top: 0.5em solid white;
+		border-left: 0.5em solid white;
+	  }
+	</style>
+</head>
+<body>
+	<div class="row intro">
+		<div class="col-md-9 intro-main with-border pane-1">1</div>
+		<div class="col-md-3 intro-main with-border">
+			<div class="col-xs-12 intro-side with-border pane-2">2</div>
+			<div class="col-xs-12 intro-side with-border pane-3">3</div>
+		</div>
+	</div>
+</body>
+</html>
